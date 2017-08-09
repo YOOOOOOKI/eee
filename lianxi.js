@@ -1,5 +1,5 @@
-'use strict'
-function decompose(num) {
+"use strict";
+module.exports =function decompose(num) {
     let prime_number=[];//素数矩阵
     let final_number=[];
     for(let i=2;i<=num;i++)//求num以内的素数矩阵
@@ -33,6 +33,13 @@ function decompose(num) {
   final_number.sort(function (a,b) {
       return a-b;
   });
-   console.log(final_number);
-}
-decompose(90);
+    let str='';
+    for(let i of final_number)
+        {
+            str=str+String(i);
+        }
+   return (str);
+};
+// decompose(45);
+// decompose(90);
+
