@@ -1,5 +1,5 @@
 'use strict'
-module.exports = function judgeNum()
+ function judgeNum()
 {   
     let arr=[];
     for (let i=100;i<=999;i++)
@@ -17,4 +17,6 @@ module.exports = function judgeNum()
 } 
         return arr;
     }
+   console.log(judgeNum()) ;
+   
     
